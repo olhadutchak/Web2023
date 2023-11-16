@@ -1,0 +1,63 @@
+body {
+  width: 400px;
+  text-align: center;
+  background-color: #9acbf7;
+}
+
+h1 {
+  font-family: Helvetica;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s; 
+}
+
+ul li:hover {
+  background-color: #d5e7f5; 
+}
+
+ul li.completed {
+  text-decoration: line-through;
+}
+ul li:after {
+  content: '\2714';
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  display: none;
+  border-radius: 50%;
+}
+
+ul li.completed:after {
+  display: block;
+}
+ul li:active {
+  background-color: #7fa5c9;
+}
+button {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #8d8dd4;
+}
+
+
+/* Стилі для кнопки закриття */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}

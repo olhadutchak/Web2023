@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Task Manager",
+  "version": "1.0",
+  "description": " розширення для  відстеження завдань.",
+  "permissions": ["storage", "notifications"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "task.png"
+    }
+  }
+}
+
+  
